@@ -23,6 +23,10 @@
       "max": 0,
       "current": 0
     },
+    "situational-dice": {
+      "max": 0,
+      "current": 0
+    },
     "health": {
       "level1": { "slots": 2, "filled": 0},
       "level2": { "slots": 2, "filled": 0},
