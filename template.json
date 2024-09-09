@@ -1,22 +1,60 @@
 {
 "Actor": {
-  "types": ["character"],
+  "types": ["character", "npc", "monster"],
   "htmlFields": ["biography"],
   "character": {
     "biography": "",
+    "stamina": {
+      "level1": { "name":"Alert", "slots": 0, "filled": 0},
+      "level2": { "name":"Tired", "slots": 6, "filled": 0},
+      "level3": { "name":"Drained", "slots": 4, "filled": 0},
+      "level4": { "name":"Exhausted", "slots": 2, "filled": 0}
+    },
+    "attack-dice": {
+      "source": null,
+      "max": 0,
+      "current": 0
+    },
+    "reflex-dice": {
+      "max": 0,
+      "current": 0
+    },
+    "passive-dice": {
+      "max": 0,
+      "current": 0
+    },
     "health": {
-      "value": 10,
-      "min": 0,
-      "max": 10
+      "level1": { "slots": 2, "filled": 0},
+      "level2": { "slots": 2, "filled": 0},
+      "level3": { "slots": 1, "filled": 0},
+      "level4": { "slots": 1, "filled": 0},
+      "level5": { "slots": 0, "filled": 0},
+      "level6": { "slots": 0, "filled": 0}
     },
-    "power": {
-      "value": 5,
-      "min": 0,
-      "max": 5
+    "attributes": {
+      "Dexterity":0,
+      "Vitality":0,
+      "Logic":0,
+      "Willpower":0,
+      "Charisma":0,
+      "Empathy":0      
     },
-    "attributes": {},
+    "skills": {
+      "Athletics": { "type":"body", "die-size": 4 },
+      "Sneaking": { "type":"body", "die-size": 4 },
+      "Physiology": { "type":"knowledge", "die-size": 4 },
+      "Nature": { "type":"knowledge", "die-size": 4 },
+      "Mechanics": { "type":"knowledge", "die-size": 4 },
+      "Society": { "type":"knowledge", "die-size": 4 },
+      "Persuasion": { "type":"social", "die-size": 4 },
+      "Intimidation": { "type":"social", "die-size": 4 },
+      "Insight": { "type":"social", "die-size": 4 },
+      "Deception": { "type":"social", "die-size": 4 }
+    }
     "groups": {}
-  }
+  },
+  "npc": {},
+  "monster":{}
 },
 "Item": {
   "types": ["item"],
