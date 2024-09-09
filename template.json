@@ -54,7 +54,7 @@
       "Intimidation": { "type":"social", "die-size": 4 },
       "Insight": { "type":"social", "die-size": 4 },
       "Deception": { "type":"social", "die-size": 4 }
-    }
+    },
     "groups": {}
   },
   "npc": {},
